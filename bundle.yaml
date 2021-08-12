@@ -3,7 +3,8 @@ version: "2"
 id: "tjohns-ven-casc-ops-controller"
 description: "CloudBees CI configuration bundle for the tjohns-ven-casc ops-controller Controller"
 jcasc:
-  - "jenkins.yaml"
+  - "jcasc/credentials.yaml"
+  - "jcasc/jenkins.yaml"
 plugins:
   - "plugins.yaml"
 catalog:
