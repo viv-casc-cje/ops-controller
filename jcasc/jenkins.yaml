@@ -4,22 +4,7 @@ jenkins:
       env:
       - key: "GITHUB_USER"
         value: "${GITHUB_USER}"
-  quietPeriod: 0
-  systemMessage: 'Jenkins configured using CloudBees CI CasC'
 unclassified:
-  hibernationConfiguration:
-    activities:
-    - "build"
-    - "web"
-    enabled: true
-    gracePeriod: 1500
-  gitHubConfiguration:
-    apiRateLimitChecker: ThrottleForNormalize
-  gitHubPluginConfig:
-    hookSecretConfigs:
-    - credentialsId: "cloudbees-ci-workshop-github-webhook-secret"
-  globalDefaultFlowDurabilityLevel:
-    durabilityHint: PERFORMANCE_OPTIMIZED
   globallibraries:
     libraries:
     - defaultVersion: "main"
